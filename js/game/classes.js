@@ -1,4 +1,6 @@
-//GameBoard Class
+/**
+ * Base Class to Draw and set properties
+ */
 class Base {
     constructor(x,y,width,height,color) {
         this._x = x;
@@ -17,7 +19,9 @@ class Base {
     }
     
 }
-
+/**
+ * GameBoard
+ */
 class GameBoard extends Base {
     constructor(x,y,width,height,color){
         super(x,y,width,height,color);
@@ -27,7 +31,9 @@ class GameBoard extends Base {
        return;
     }
 }
-
+/**
+ * Obsacles or Bricks to populate the stage
+ */
 class Obstacle extends Base {
     constructor(x,y,width,height,color){
         super(x,y,width,height,color);
